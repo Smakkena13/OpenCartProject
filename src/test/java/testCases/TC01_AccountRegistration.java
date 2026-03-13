@@ -11,6 +11,7 @@ public class TC01_AccountRegistration extends BaseClass {
     @Test(groups = "sanity")
     void testAccountRegistration(){
 //        logger.info("*****ACCOUNT REGISTRATION STARTS*******");
+        System.out.println("first testcase");
         HomePage hp=new HomePage(driver);
         hp.clkMyAccount();
         hp.clkRegister();
