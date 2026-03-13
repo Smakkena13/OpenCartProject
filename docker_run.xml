@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="mysuite">
+    
+        <listeners>
+            <listener class-name="Utilities.ExtentReportManager"></listener>
+        </listeners>
+
+    <test name="mytest">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="os" value="linux"/>
+        <classes>
+<!--            <class name="testCases.TC01_AccountRegistration"/>-->
+            <class name="testCases.TC02_LoginTC"/>
+<!--            <class name="testCases.TC03_LoginDDT"/>-->
+        </classes>
+    </test>
+</suite>
