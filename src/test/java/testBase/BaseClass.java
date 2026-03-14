@@ -39,7 +39,7 @@ public class BaseClass {
         p=new Properties();
         FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"\\config.properties");
         p.load(file);
-        System.out.println(p.getProperty("url1"));
+        System.out.println(p.getProperty("url2"));
 
         logger=LogManager.getLogger(this.getClass());  //Log4j
         if(p.getProperty("execution_env").equalsIgnoreCase("local")) {
@@ -90,7 +90,7 @@ public class BaseClass {
             driver=new RemoteWebDriver(url_l,dc);
 
         }
-        driver.get(p.getProperty("url1"));
+        driver.get(p.getProperty("url2"));
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

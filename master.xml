@@ -10,7 +10,7 @@
         <parameter name="browser" value="chrome"/>
         <parameter name="os" value="windows"/>
         <classes>
-<!--            <class name="testCases.TC01_AccountRegistration"/>-->
+            <class name="testCases.TC01_AccountRegistration"/>
             <class name="testCases.TC02_LoginTC"/>
 <!--            <class name="testCases.TC03_LoginDDT"/>-->
         </classes>
